@@ -1,0 +1,61 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+    <title>jquery-mobile-backbone-template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.2.0.min.css"/>
+
+    <script type="text/template" id="firstPage">
+        <div id="page">
+            <h1>This is page 1</h1>
+
+            <h2>{{= message }}</h2>
+
+            <p>
+                <select id="drpOne">
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                </select>
+            </p>
+
+            <p><input type="button" value="Click 1" id="button1" /></p>
+
+            <a href="#page2">Goto page 2</a>
+        </div>
+    </script>
+
+    <script type="text/template" id="secondPage">
+        <div id="page">
+            <h1>This is page 2</h1>
+
+            <h2>{{= message }}</h2>
+
+            <p>
+                <select id="drpTwo">
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                </select>
+            </p>
+
+            <p><input type="button" value="Click 2" id="button2" /></p>
+
+            <a href="#page1">Goto page 1</a>
+        </div>
+    </script>
+
+    <script type="text/javascript" src="lib/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="js/jqm-config.js"></script>
+    <script type="text/javascript" src="lib/jquery.mobile-1.2.0.min.js"></script>
+    <script type="text/javascript" src="lib/underscore-min.js"></script>
+    <script type="text/javascript" src="lib/backbone-min.js"></script>
+    <script type="text/javascript" src="js/setup.js"></script>
+    <script type="text/javascript" src="js/views.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body></body>
+
+</html>
