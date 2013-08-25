@@ -6,7 +6,7 @@ $(document).bind("mobileinit", function () {
     $.mobile.defaultPageTransition = "slide";
 
     // Remove page from DOM when it's being replaced.
-    $("div[data-role='page']").live("pagehide", function (event, ui) {
+    $("div[data-role='page']").on("pagehide", function (event, ui) {
         $(event.currentTarget).remove();
     });
 });
